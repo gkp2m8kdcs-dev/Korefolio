@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korefolio — Global Markets in Your Pocket</title>
+    <meta name="description" content="Korefolio is a sophisticated iOS portfolio tracker for global equities, regional markets, and digital assets. Track watchlists, analyze K-line charts, and manage multi-bucket portfolios on-device.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background: #0a0e1a;
+            color: #e6e9ef;
+            line-height: 1.7;
+            padding: 60px 24px;
+        }
+        .container { max-width: 880px; margin: 0 auto; }
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+        .tagline {
+            font-size: 18px;
+            color: #8b95a7;
+            font-weight: 400;
+        }
+        h2 {
+            font-size: 26px;
+            font-weight: 600;
+            color: #ffffff;
+            margin: 48px 0 20px;
+            letter-spacing: -0.3px;
+        }
+        h3 {
+            font-size: 19px;
+            font-weight: 600;
+            color: #ffffff;
+            margin: 28px 0 12px;
+        }
+        p {
+            font-size: 16px;
+            color: #b8c0cc;
+            margin-bottom: 18px;
+        }
+        ul {
+            list-style: none;
+            margin: 16px 0 24px;
+            padding-left: 0;
+        }
+        ul li {
+            padding: 10px 0 10px 28px;
+            position: relative;
+            color: #b8c0cc;
+            font-size: 16px;
+        }
+        ul li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #4f8cff;
+            font-weight: 700;
+        }
+        .highlight {
+            background: rgba(79, 140, 255, 0.08);
+            border-left: 3px solid #4f8cff;
+            padding: 20px 24px;
+            margin: 28px 0;
+            border-radius: 4px;
+        }
+        .highlight p { margin-bottom: 0; color: #d0d6e0; }
+        .links {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+        .links a {
+            color: #4f8cff;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .links a:hover { color: #7ba8ff; }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #6b7280;
+            font-size: 14px;
+        }
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(79, 140, 255, 0.15);
+            color: #4f8cff;
+            border-radius: 12px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="badge">iOS Application</span>
+            <h1>Korefolio</h1>
+            <p class="tagline">Global Markets in Your Pocket</p>
+        </header>
+
+        <section>
+            <h2>Overview</h2>
+            <p>
+                Korefolio is a sophisticated iOS application designed for investors and enthusiasts who track global equities, regional markets, and digital assets across the United States, Hong Kong, mainland China, Japan, the United Kingdom, Germany, and the cryptocurrency complex. Built natively in Swift with UIKit, the experience runs entirely on-device with no account, no login, and no cloud dependency, while delivering a polished, premium feel that rivals professional desktop terminals.
+            </p>
+        </section>
+
+        <section>
+            <h2>What Korefolio Does</h2>
+
+            <h3>Markets</h3>
+            <p>
+                The Markets tab opens with a live breadth snapshot, top gainers and losers, the most actively traded names of the session, and a sector drill-down so users can move from a macro view to a specific industry in two taps.
+            </p>
+
+            <h3>Watchlist</h3>
+            <p>
+                The Watchlist tab is the user's curated shortlist, with a single tap adding any instrument to the list and a swipe removing it.
+            </p>
+
+            <h3>Stock Detail &amp; K-Line Charts</h3>
+            <p>
+                Every stock opens into a deeply interactive detail screen anchored by a custom K-line chart engine drawn entirely with Core Animation. Three chart types — Candlestick, Line, and Mountain — and seven time frames from 1 Day to All combine with pinch-to-zoom, pan-to-scroll, and a long-press crosshair that reveals open, high, low, close, and percentage change for any candle. Key statistics, sector context, and exchange information sit alongside the chart, while Buy and Sell actions launch a full transaction form without leaving the workflow.
+            </p>
+
+            <h3>Portfolio</h3>
+            <p>
+                The Portfolio tab turns the app into a personal multi-bucket tracker. Users create themed portfolios such as Core Growth, Asia Tech, or Crypto Sleeve, each color-coded and assembled from a curated universe of 90+ instruments. A custom asset-trend chart visualizes portfolio momentum, and a holdings list surfaces live market value, cost basis, and unrealized P&amp;L per position.
+            </p>
+
+            <h3>Activity</h3>
+            <p>
+                The Activity tab records every buy and sell, supports photo attachments from the camera or photo library for receipts and notes, and filters by transaction type and date.
+            </p>
+
+            <h3>Profile</h3>
+            <p>
+                The Profile tab provides settings, a demo-data reset, and a clear educational-use disclaimer, keeping the experience compliant with App Store guidelines.
+            </p>
+        </section>
+
+        <section>
+            <h2>Key Features</h2>
+            <ul>
+                <li>Native iOS build in Swift + UIKit, optimized for iPhone</li>
+                <li>Custom K-line chart engine drawn with Core Animation</li>
+                <li>Three chart types: Candlestick, Line, and Mountain</li>
+                <li>Seven time frames from 1 Day to All</li>
+                <li>Pinch-to-zoom, pan-to-scroll, and long-press crosshair</li>
+                <li>Multi-bucket portfolios with color coding</li>
+                <li>Camera &amp; photo library receipt attachments</li>
+                <li>Offline-first: no account, no login, no cloud</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Privacy &amp; Data</h2>
+            <div class="highlight">
+                <p>
+                    Korefolio does not connect to a broker, place real orders, or stream live market data. Every chart, price, and trade is generated locally and persisted on the device. No notifications, no biometric prompts, no accounts — just a fast, beautiful, and fully private way to explore how a multi-market portfolio dashboard should feel.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Disclaimer</h2>
+            <p>
+                Korefolio is for demonstration, education, and workflow prototyping. It does not connect to a broker, place real orders, or stream live market data. Every chart, price, and trade is generated locally and persisted on the device. No notifications, no biometric prompts, no accounts — just a fast, beautiful, fully private way to explore how a multi-market portfolio dashboard should feel.
+            </p>
+        </section>
+
+        <div class="links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="support.html">Support</a>
+            <a href="terms.html">Terms of Use</a>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Korefolio. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
